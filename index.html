@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lost Donjon</title>
+    <link href="https://fonts.googleapis.com/css?family=Acme"
+    rel="stylesheet">
+    <link rel="stylesheet" href="assets/Style.css">
+    <script src="assets/js/joueur.js"></script>
+    <script src="assets/js/gamemanager.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <p>Lost Donjon</p>
+        <h1>Choisit ton personage</h1>
+    </div>
+
+    <div class="interface">
+        <a href="#" onclick="GameManager.setGameStart('Chevalier')">
+            <img src="assets/img/Joueur/Chevalier.png" alt="chevalier">
+            <div>
+                <h3>Chevalier</h3>
+                <p>Le chevalier possède une grande vie ainsi qu'une grande defence grace a son armure,
+                    mais cette armure se revele aussi etre son seul defaut car elle le rend beacoup plus lent.</p>
+            </div>
+        </a>
+        <a href="#" onclick="GameManager.setGameStart('Assasin')">
+            <img src="assets/img/Joueur/Assasin.png" alt="assasin">
+            <div>
+                <h3>Assasins</h3>
+                <p>L'assasin est rapide et furtif, il se deplace tel une ombre dans la nuit.
+                    Malheuresement, ceci ne sert qu'a cacher sa faible vie.</p>
+            </div>
+        </a>
+        <a href="#" onclick="GameManager.setGameStart('Archere')">
+            <img src="assets/img/Joueur/Archere.png" alt="archere">
+            <div>
+                <h3>Archere</h3>
+                <p>L'archere est precise et rapide, son passe en temps que chasseuse lui permet de suivre ses proies
+                    sans etre repere, ne possede aucun default apparent.</p>
+            </div>
+        </a>
+        <a href="#" onclick="GameManager.setGameStart('Mage')">
+            <img src="assets/img/Joueur/Mage.png" alt="mage">
+            <div>
+                <h3>Mage</h3>
+                <p>La mage possede de grand degats ainsi qu'un grand savoir,
+                    mais en contrepartie ne possede aucune aptitude defensive.</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="main" id="main" hidden>
+        <h2 id="text_1" class="text_case"></h2>
+    </div>
+    
+    <div class="choix_1" id="c1" hidden>
+        <h2 id="text_2" class="text_case"></h2>
+        <h2 id="text_3" class="text_case"></h2>
+        <h2 id="text_4" class="text_case"></h2>
+        <h2 id="text_5" class="text_case"></h2>
+        <h2 id="text_6" class="text_case"></h2>
+        <h2 id="text_7" class="text_case"></h2>
+    </div>
+
+    <div class="choix_2" id="c2" hidden>
+        <h2 id="text_8" class="text_case"></h2>
+        <h2 id="text_9" class="text_case"></h2>
+        <h2 id="text_10" class="text_case"></h2>
+        <h2 id="text_11" class="text_case"></h2>
+        <h2 id="text_12" class="text_case"></h2>
+    </div>
+
+    <div class="choix_3" id="c3" hidden>
+        <h2 id="text_13" class="text_case"></h2>
+        <h2 id="text_14" class="text_case"></h2>
+        <h2 id="text_15" class="text_case"></h2>
+        <h2 id="text_16" class="text_case"></h2>
+        <h2 id="text_17" class="text_case"></h2>
+    </div>
+
+    <div id="content">
+    </div>
+
+</body>
+</html>
